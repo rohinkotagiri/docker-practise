@@ -1,2 +1,4 @@
+from docker_practise import pipeline
+
 def main() -> None:
-    print("Hello from docker-practise!")
+    pipeline.sys_arg_printer()
