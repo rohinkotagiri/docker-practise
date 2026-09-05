@@ -1,16 +1,14 @@
 # NY Taxi Data Ingestion (Docker Practice)
-
-> Note: This repository is created strictly for learning and educational purposes to practice Docker, Docker Compose, container networking, and basic data engineering workflows.
+This repository is created strictly for learning and educational purposes to practice Docker, Docker Compose, container networking, and basic data engineering workflows.
 
 ## Overview
-
 This project is a simple data ingestion pipeline that downloads NYC Yellow Taxi trip data (January 2021) from the DataTalksClub datasets repository and streams it in chunks into a PostgreSQL database running inside a Docker container.
 
 The setup consists of:
 - **PostgreSQL**: Stores the ingested taxi trip data.
 - **pgAdmin**: Web interface to inspect the PostgreSQL database.
 - **Ingestion Script**: Python script using Pandas, SQLAlchemy, and Click to stream and load CSV chunks.
-- **uv**: Fast Python package manager used to manage dependencies and run the script in the container.
+- **uv**: Python package manager used to manage dependencies and run the script in the container.
 - **Docker & Docker Compose**: Manages container services, volumes, and networks.
 
 ---
